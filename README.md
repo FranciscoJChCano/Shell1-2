@@ -35,10 +35,19 @@ if [ $# -lt 3 ]; then: Comprueba si la cantidad de argumentos ($#) es menor que 
 echo "Incorrecto , Es necesario realizar 3 parámetros": Si la condición es verdadera, se imprime el mensaje de error "Incorrecto, Es necesario realizar 3 parámetros".
 exit 1: El script termina con un código de salida 1, indicando un error.
 
-Estas líneas imprimen el primer y el tercer parámetro pasados al script.
+Ejercicio 2:
 
-echo "El primer parámetro es: $1": Imprime el primer parámetro ($1).
-echo "El tercer parámetro es: $3": Imprime el tercer parámetro ($3).
+function parametros(): Declara una función llamada parametros.
+
+fichero="carpeta personal": Declara una variable local fichero dentro de la función y le asigna el valor "carpeta personal".
+
+echo "En el fichero $fichero existen" $# "parametros": Utiliza el comando echo para imprimir un mensaje. "$fichero" se expande a "carpeta personal" y "$#" se expande al número de argumentos que se pasan a la función parametros.
+
+parametros 1 2 3 4 5: Llama a la función parametros con cinco argumentos (1 2 3 4 5).
+
+$(...): Captura la salida de la función parametros y la asigna a la variable texto.
+
+// echo "$texto" Este comando imprime el contenido de la variable texto en la terminal.
 
 Condicionales:
 
