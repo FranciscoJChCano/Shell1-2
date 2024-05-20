@@ -1,3 +1,9 @@
 #!/bin/bash
+function parametros()
+{
+    fichero="carpeta personal"
+    echo "En el fichero $fichero existen" $# "parametros"
+}
 
-echo "En el fichero $1 existen $# parámetros"
+texto=$(parametros 1 2 3 4 5)
+echo $texto
