@@ -31,7 +31,7 @@ Explicación:
 
 Estas líneas verifican si el número de parámetros pasados al script es menor que 3.
 
-if " $# -lt 3 "; then: Comprueba si la cantidad de argumentos ($#) es menor que 3 (-lt 3).
+if " $ # -lt 3 "; then: Comprueba si la cantidad de argumentos ($#) es menor que 3 (-lt 3).
 echo "Incorrecto , Es necesario realizar 3 parámetros": Si la condición es verdadera, se imprime el mensaje de error "Incorrecto, Es necesario realizar 3 parámetros".
 exit 1: El script termina con un código de salida 1, indicando un error.
 
